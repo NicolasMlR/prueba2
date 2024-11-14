@@ -1,0 +1,64 @@
+// Estilos generales para el ion-content
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+// Card principal para el formulario
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+  ion-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// Estilos para el título en la barra superior
+ion-toolbar.toolbar-turquesa {
+  --background: #4285f4;
+  color: #ffffff;
+
+  ion-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+// Estilos para el input de correo
+ion-input {
+  width: 100%;
+  margin-top: 12px;
+
+  &::part(native) {
+    border-radius: 4px;
+    font-size: 16px;
+  }
+}
+
+// Mensaje de error para el campo de correo
+.error-message {
+  color: #d93025;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+// Botón de restablecer
+ion-button.toolbar-naranja {
+  --background: #4285f4;
+  --background-hover: #357ae8;
+  --border-radius: 4px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}

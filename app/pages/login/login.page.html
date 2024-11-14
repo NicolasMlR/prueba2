@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class="toolbar-turquesa">
+    <ion-title>{{titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-container">
+  <ion-card>
+  
+
+    <ion-card-header>
+      <ion-card-title color="dark">Ingresa a tu Cuenta</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input [(ngModel)]="email" type="email" label="Correo" labelPlacement="stacked" fill="outline"></ion-input>
+      <br>
+      <ion-input [(ngModel)]="password" type="password" label="Contraseña" labelPlacement="stacked" fill="outline"></ion-input>
+      <br>
+      <ion-button (click)="login()" size="block" class="toolbar-naranja">INGRESAR</ion-button>
+      <br>
+      <p>Olvidaste tu Contraseña?. Puedes Recuperarla Aqui!. <a routerLink="/recuperar">Recuperar Contraseña</a></p>
+    </ion-card-content>
+  </ion-card>
+  <p>Si No Tienes Cuenta en tu TeLlevo App, puedes Registrate Aqui.   <a routerLink="/registro">Crea tu Cuenta</a></p>
+</ion-content>
